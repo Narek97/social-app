@@ -1,3 +1,3 @@
-import { Users } from './dbmodels/user.model';
+import { User } from './dbmodels/user.model';
 
-export default [Users];
+export default [User];

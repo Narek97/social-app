@@ -1,9 +1,9 @@
 import { Injectable } from '@nestjs/common';
-import { Users } from '@Models/dbmodels/user.model';
+import { User } from '@Models/dbmodels/user.model';
 
 @Injectable()
 export class UsersService {
-  async findOne(email: string): Promise<Users> {
-    return Users.findOne({ where: { email }, raw: true });
+  async getUserByEmail(email: string): Promise<User> {
+    return User.findOne({ where: { email }, raw: true });
   }
 }

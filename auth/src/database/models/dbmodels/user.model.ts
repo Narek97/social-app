@@ -12,7 +12,7 @@ interface CreateUsersAttr {
 
 @Table({ tableName: 'users' })
 @ObjectType()
-export class Users extends BaseModel<Users, CreateUsersAttr> {
+export class User extends BaseModel<User, CreateUsersAttr> {
   @Column({ type: DataType.STRING })
   email: string;
 

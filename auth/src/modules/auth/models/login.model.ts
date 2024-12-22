@@ -1,7 +1,9 @@
 import { ObjectType } from '@nestjs/graphql';
-import { Users } from '@Models/dbmodels/user.model';
+import { User } from '@Models/dbmodels/user.model';
 
 @ObjectType()
 export class LoginModel {
-  user: Users;
+  user: User;
+  accessToken: string;
+  refreshToken: string;
 }

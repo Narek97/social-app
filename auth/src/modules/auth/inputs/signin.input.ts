@@ -1,6 +1,7 @@
 import { Field, InputType } from '@nestjs/graphql';
 import { IsEmail, IsNotEmpty, IsString } from 'class-validator';
 
+// important for passport use username and password variables, for example username cant be email
 @InputType()
 export class SigninInput {
   @Field()
